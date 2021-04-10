@@ -1,0 +1,18 @@
+.nav{
+    position: fixed;
+    right: 2%;
+    z-index: 5;
+    top: 50%;
+  }
+  .nav__item{
+    width: 15px;
+    height: 15px;
+    background-color: #ffffff;
+    display: block;
+    margin-bottom: 5px;
+    border-radius: 50%;
+  }
+  
+  .nav__item_active{
+    background-color: #f78b1f;
+  }

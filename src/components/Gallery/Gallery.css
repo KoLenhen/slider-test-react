@@ -1,0 +1,122 @@
+.gallery{
+	position: relative;
+}
+
+.gallery__wrap{
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+	display: flex;
+}
+
+.gallery__item{
+	min-width: 100vw;
+    height: 100vh;
+	padding-top: 6%;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: left top;
+}
+
+.gallery__picture{
+	padding-top: 15%;
+	width: 60%;
+}
+
+.gallery__item_first{
+    background-image: url(../../images/sub-bg-first.jpg);
+}
+
+.gallery__item_second{
+    background-image: url(../../images/sub-bg-second.jpg);
+}
+
+.gallery__item_third{
+    background-image: url(../../images/sub-bg-third.jpg);
+}
+
+
+.gallery__container{
+	display: flex;
+    flex-wrap: nowrap;
+    width: 100vw;
+    padding: 0;
+    overflow-x: -moz-scrollbars-none;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    list-style: none;
+}
+
+.gallery__wrap::-webkit-scrollbar{
+	display: none;
+} 
+
+.gallery__slider{
+	margin: 0 auto;
+	padding: 20px 0;
+	width: 70%;
+    position: absolute;
+    bottom: 42px;
+    left: 15%;
+}
+
+.gallery__range{
+	background: #ffffff;
+    border: none;
+    height: 10px;
+    width: 100%;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border-radius: 3px;
+    outline: none;    
+}
+
+.gallery__range::-webkit-slider-thumb{
+	background-color: transparent;
+	background-image: url('../../images/range.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	border: none;
+	cursor: pointer;
+	height: 42px;
+	width: 30px;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+}
+
+.gallery__title{
+	font-family: 'Gotham Pro', serif;
+	font-weight: normal;
+	font-size: 3vw;
+	color: #ffffff;
+	text-align: left;
+	padding-left: 5%;
+	font-weight: normal;
+}
+
+.gallery__label{
+	font-family: 'Gotham Pro', serif;
+	font-weight: normal;
+	color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5%;
+	font-family: serif;
+}
+
+@media screen and (min-width: 1120px) {
+	.gallery__picture {
+		padding-top: 1%;
+		width: 40%;
+	}
+}
+
+@media screen and (max-width: 678px) {
+	.gallery__picture {
+		padding-top: 30%;
+    	width: 71%;
+	}
+}

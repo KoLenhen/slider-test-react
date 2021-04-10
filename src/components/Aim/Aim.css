@@ -1,0 +1,252 @@
+.aim{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    /* background-position: center;
+    background-image: url(../../images/first-bg.jpg);
+    background-repeat: no-repeat;    
+    background-size: 100% 100%; */
+
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  position: relative;
+  overflow: hidden;
+}
+
+.aim__background {
+    width: 100%;
+    height: 100%;
+ }
+
+.aim__content{
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    padding: 5% 0 0 8%;
+}
+
+.aim__title{
+    color: #0d319c;
+    font-family: 'Gotham Pro', serif;
+    font-size: 5vw;
+    font-weight: 300; 
+    text-align: left;
+    max-width: 75%;
+}
+
+.aim__text{
+    color: #0d319c;
+    font-family: 'Lato', serif;
+    font-size: 2vw;
+    font-weight: normal;   
+    position: absolute;
+}
+
+.aim__text_hypoglycemia{
+    bottom: 1vw;
+    left: -4vw;
+    width: max-content;
+}
+
+.aim__text_risks{
+    bottom: 1vw;
+    left: -4vw;
+    width: max-content;
+}
+
+.aim__text_cd{
+    bottom: 1vw;
+    left: -4vw;
+    width: max-content;
+}
+
+.aim__text_HbA1c{
+    top: 2vw;
+    left: 7vw;
+    width: max-content;
+}
+
+.aim__wrapper { 
+    position: absolute;
+}
+
+.aim__wrapper_hypoglycemia { 
+    top: 53%;
+    left: 26.5%;
+}
+.aim__wrapper_cd { 
+    top: 68%;
+    left: 47%;
+}
+
+.aim__wrapper_HbA1c{ 
+    top: 30%;
+    left: 54%;
+}
+
+.aim__wrapper_risks{ 
+    top: 66%;
+    left: 80.5%;
+}
+
+.aim__circle {  
+    background: #f8e2da;
+    border-radius: 50px;
+}
+
+.aim__circle_hypoglycemia {
+    width: 3vw;
+    height: 3vw;  
+    top: 52%;
+    left: 27%; 
+}
+
+.aim__circle_risks {
+    width:  1.5vw;  
+    height: 1.5vw;  
+    top: 52%;
+    left: 27%; 
+}
+
+.aim__circle_cd {
+    width:  1.5vw;  
+    height: 1.5vw;  
+    top: 52%;
+    left: 27%; 
+}
+
+.aim__circle_HbA1c {
+    width: 6vw;
+    height: 6vw;  
+}
+
+.aim__circle::after,
+.aim__circle::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 100px;
+}
+
+.aim__circle_hypoglycemia::after,
+.aim__circle_hypoglycemia::before {
+    width: 3vw;
+    height: 3vw;
+}
+
+.aim__circle_cd::after,
+.aim__circle_cd::before {
+    width:  1.5vw;  
+    height:  1.5vw;  
+}
+
+.aim__circle_risks::after,
+.aim__circle_risks::before {
+    width:  1.5vw;  
+    height:  1.5vw;  
+}
+
+.aim__circle_HbA1c::after,
+.aim__circle_HbA1c::before {
+    width: 6vw;
+    height: 6vw;
+}
+
+.aim__circle::after {
+    background: #f8e2da;
+    animation: aim__circle-white 3s ease-in-out infinite;
+}
+
+.aim__circle::before {
+    z-index: 10;
+    background: #f78b1f;
+    animation: aim__circle-red 3s ease-in-out infinite;
+}
+
+@keyframes aim__circle-white {
+    0% {
+        -webkit-transform: scale(0, 0);
+        -moz-transform: scale(0, 0);
+        -ms-transform: scale(0, 0);
+        -o-transform: scale(0, 0);
+        transform: scale(0, 0);
+    }
+    20% {
+        -webkit-transform: scale(0, 0);
+        -moz-transform: scale(0, 0);
+        -ms-transform: scale(0, 0);
+        -o-transform: scale(0, 0);
+        transform: scale(0, 0);
+    }
+    50% {
+        -webkit-transform: scale(0.5, 0.5);
+        -moz-transform: scale(0.5, 0.5);
+        -ms-transform: scale(0.5, 0.5);
+        -o-transform: scale(0.5, 0.5);
+        transform: scale(0.5, 0.5);
+    }
+    100% {
+        -webkit-transform: scale(1, 1);
+        -moz-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes aim__circle-red {
+    0% {
+        -webkit-transform: scale(0, 0);
+        -moz-transform: scale(0, 0);
+        -ms-transform: scale(0, 0);
+        -o-transform: scale(0, 0);
+        transform: scale(0, 0);
+    }
+    25% {
+        -webkit-transform: scale(0.5, 0.5);
+        -moz-transform: scale(0.5, 0.5);
+        -ms-transform: scale(0.5, 0.5);
+        -o-transform: scale(0.5, 0.5);
+        transform: scale(0.5, 0.5);
+    }
+    60% {
+        -webkit-transform: scale(0, 0);
+        -moz-transform: scale(0, 0);
+        -ms-transform: scale(0, 0);
+        -o-transform: scale(0, 0);
+        transform: scale(0, 0);
+    }
+    100% {
+        -webkit-transform: scale(1, 1);
+        -moz-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+}
+
+.aim__arrow{
+    width: 50%;
+    height: 10%;
+    margin: 0 auto;
+    background-color: transparent;
+    border: none;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 2em;
+    display: flex;
+    font-weight: normal;
+    flex-direction: column;
+    background-image: radial-gradient( ellipse at bottom, #f78b1f9c 20%, #f78b1f96 20%, transparent 64% );
+}
