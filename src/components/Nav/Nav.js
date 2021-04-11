@@ -9,6 +9,7 @@ function Nav() {
           to="#aim"
           className="nav__item"
           activeClassName="nav__item_active"
+          active={true}
         ></NavHashLink>
         <NavHashLink
           to="#base"
