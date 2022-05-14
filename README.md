@@ -1,6 +1,6 @@
 # test-task
 
-Ссылка на git-pages: https://kolenhen.github.io/slider-test-react/
+Ссылка на git-pages: https://Kolezhanchik.github.io/slider-test-react/
 
 ## Использованные технологии
 
